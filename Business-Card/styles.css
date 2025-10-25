@@ -1,0 +1,64 @@
+body {
+    margin: 20px;
+    font-family: "Courier New", Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5f3ff;
+}
+
+/* Avatar styling */
+.avatar {
+    width: 150px;
+    border-radius: 50%; /* makes image circular */
+    border: 3px solid #9d4edd;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Card styling */
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #c77dff, #9d4edd);
+    color: #2b2839;
+    border: 3px solid #d8cefe;
+    border-radius: 20px; /* smoother edges */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* shadow effect */
+    transition: all 0.4s ease;
+}
+
+/* Hover effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.5);
+}
+
+/* Avatar hover animation */
+.avatar:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Animated border effect */
+@keyframes borderPulse {
+    0% {
+        border-color: #d8cefe;
+    }
+    50% {
+        border-color: #9d4edd;
+    }
+    100% {
+        border-color: #d8cefe;
+    }
+}
+
+/* Apply the border animation */
+.card {
+    animation: borderPulse 2s infinite ease-in-out;
+}
+
+/* Optional dotted border utility */
+.border-blue {
+    border: 1px dotted blue;
+}
